@@ -17,8 +17,8 @@
 
 #Paths to diffrent project folders
 SRCDIR := src
-BUILDIR := build
-TARGET := bin/runner
+BUILDDIR := build
+TARGET := bin
 
 #Compiler options.
 CC = g++
@@ -44,7 +44,7 @@ clean:
 
 # Tests
 tester:
-	$(CC) $(CFLAGS) test/tester.cpp $(INC) $(LIB) -o bin/tester
+	$(CC) $(CCFLAGS) test/tester.cc -o tester.exe 
 
 # Spikes
 ticket:
