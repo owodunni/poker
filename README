@@ -23,11 +23,11 @@ Any file belonging to the beating poker project should have one of the following
 #       ------------------------        #
 #                                       #
 #########################################
-# filename:	"name"                  #
-# creator:	"creator"               #
-# date: 	"date"                  #
-#                                       #
-# "Enter description"                   #
+# filename:	"name"                  
+# creator:	"creator"               
+# date: 	"date"                  
+#                                       
+# "Enter description"                   
 #########################################
 #
 # TODO:
@@ -41,11 +41,11 @@ Any file belonging to the beating poker project should have one of the following
 //#       ------------------------        #
 //#                                       #
 //#########################################
-//# filename:	"name"                    #
-//# creator:	"creator"                 #
-//# date: 		"date"            #
-//#                                       #
-//# "Enter description"                   #
+//# filename:	"name"                    
+//# creator:	"creator"                 
+//# date: 		"date"            
+//#                                       
+//# "Enter description"                   
 //#########################################
 //#
 //# TODO:
