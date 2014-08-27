@@ -6,4 +6,47 @@
  `-----| \  / |   #       ------------------------        #
        |  \/ K|   #                                       #
        `------'   #########################################
+		 
+		 
+INTRODUCTION
+This is a text based poker client 
 
+		 
+SECTION X.X
+Any file belonging to the beating poker project should have one of the following headers
+
+1, This header is primarily used for files where '#' initialises a comment. 
+#########################################      
+#                                       #                     
+#       -----BEATING POKER------        # 
+#       - ~a Poole production~ -        #
+#       ------------------------        #
+#                                       #
+#########################################
+# filename:	"name"                  #
+# creator:	"creator"               #
+# date: 	"date"                  #
+#                                       #
+# "Enter description"                   #
+#########################################
+#
+# TODO:
+#
+
+2, This header is primarily used for .cc or .h files or any file where // initialises a comment.
+//#########################################      
+//#                                       #                     
+//#       -----BEATING POKER------        # 
+//#       - ~a Poole production~ -        #
+//#       ------------------------        #
+//#                                       #
+//#########################################
+//# filename:	"name"                    #
+//# creator:	"creator"                 #
+//# date: 		"date"            #
+//#                                       #
+//# "Enter description"                   #
+//#########################################
+//#
+//# TODO:
+//#
