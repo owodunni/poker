@@ -22,7 +22,7 @@ TARGET := bin
 
 #Compiler options.
 CC = g++
-CCFLAGS += -std=c++11 -Wall -Wextra -Werror
+CCFLAGS = -std=c++11 -Wall -Wextra -Werror
 
 SRCEXT := cc
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
