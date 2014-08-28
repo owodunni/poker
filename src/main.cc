@@ -16,8 +16,7 @@
 //#
 
 #include <iostream>
-//include "../lib/card.h"
-
+#include "../include/card.h"
 
 using namespace std;
 

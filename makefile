@@ -31,20 +31,28 @@ OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
 INC := -I include
 
 
-poker: $(OBJECTS) makefile
+$(TARGET): $(OBJECTS) makefile
 	@echo " Linking..."
-	@echo " $(CC) $^ -o $(TARGET) $(LIB)"; $(CC) $(CCFLAGS) -o poker.exe $(OBJECTS) 
+	@mkdir -p $(TARGET)
+	@echo " $(CC) $^ -o $(TARGET) $(LIB)"; $(CC) $(CCFLAGS) -o $(TARGET)/poker.exe $(OBJECTS) 
 
 $(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
-	 $(CC) $(CCFLAGS)  -c -o $@ $<
+	@mkdir -p $(BUILDDIR)
+	$(CC) $(CCFLAGS)  -c -o $@ $<
 
 clean:
 	@echo " Cleaning..."; 
+	@echo " $(RM) -r $(BUILDDIR) $(TARGET)"; $(RM) -r $(BUILDDIR)
+
+zap:
+	@echo " Zaping...";
 	@echo " $(RM) -r $(BUILDDIR) $(TARGET)"; $(RM) -r $(BUILDDIR) $(TARGET)
 
+
 # Tests
-tester:
-	$(CC) $(CCFLAGS) test/tester.cc -o tester.exe 
+tester: $(OBJECTS) makefile
+	@echo " Linking tester..."
+	@echo " $(CC) $^ -o $(TARGET) $(LIB)"; $(CC) $(CCFLAGS) test/tester.cc -o $(TARGET)/tester.exe  
 
 # Spikes
 ticket:
