@@ -5,11 +5,11 @@
 //#       ------------------------        #
 //#                                       #
 //#########################################
-//# filename:	main.cc                    #
-//# creator:	Alexander Poole                 #
-//# date: 		2014.08.27            #
-//#                                       #
-//# The main file                 #
+//# filename:	main.cc              
+//# creator:	Alexander Poole         
+//# date: 		2014.08.27         
+//#                                     
+//# The main file                
 //#########################################
 //#
 //# TODO:
