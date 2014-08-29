@@ -29,8 +29,7 @@ SRCEXT := cc
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
 OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
 
-#?
-INC := -I include
+######################Comiling starts###########################
 
 #creating dir /bin and compiling bin/poker.exe
 $(TARGET): $(OBJECTS) makefile
