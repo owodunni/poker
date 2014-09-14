@@ -25,32 +25,31 @@
 
 using namespace std;
 
-namespace 
-Card
-{
+
+	enum suit_t {NO_CARD,HEARTS,DIAMONDS,SPADES,CLUBS};
 
 	class 
 	Card
 	{
 		
-	string name;
-	//uint8_t value;
-	//uint8_t suit;
-		
-		//void SetName();
+	int value ;
+	suit_t suit ;
+	int id;
 		
 	public:
-		//Card(const uint8_t , const uint8_t ); //constructor
+		Card(const int , const suit_t, const int); //constructor
 		
-		string Name();
-		//uint8_t Value();
-		//uint8_t Suit();
+		
+		
+		int Value();
+		suit_t Suit();
+		int Id();
 		
 		//Printing functionality
 		//void Print(std::ostream&) const;
 		//friend std::ostream& operator << (std::ostream&,Card&);
 		
 	};
-}
+
 
 #endif

@@ -16,14 +16,19 @@
 //#
 
 #include <iostream>
-#include "../include/card.h"
+#include "../include/deck.h"
+
 
 using namespace std;
+
+
 
 int 
 main()
 {
-	cout<<"Funkar\n";
+
+
+
 
 	return 0;
 }

@@ -43,16 +43,18 @@ $(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
 	@mkdir -p $(BUILDDIR)
 	$(CC) $(CCFLAGS)  -c -o $@ $<
 
+#Removes all the .o files aswell as the /build dir
 clean:
 	@echo " Cleaning..."; 
 	@echo " $(RM) -r $(BUILDDIR) $(TARGET)"; $(RM) -r $(BUILDDIR)
 
+#Removes all the .c and .o files aswell as the /run and /build dir
 zap:
 	@echo " Zaping...";
 	@echo " $(RM) -r $(BUILDDIR) $(TARGET)"; $(RM) -r $(BUILDDIR) $(TARGET)
 
 
-#Tests, compiles test/tester.exe all dependecy files must already be compiled (run make before make tester)
+#Compiles test/tester.exe all dependecy files must already be compiled (run make before make tester)
 tester: $(OBJECTS) makefile
 	@echo " Linking tester..."
 	@echo " $(CC) $^ -o $(TARGET) $(LIB)"; $(CC) $(CCFLAGS) test/tester.cc -o $(TARGET)/tester.exe  

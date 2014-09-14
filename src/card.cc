@@ -19,53 +19,46 @@
 #include <cstdint>
 
 using namespace std;
-using namespace Card;
 
-/*
-card::Card(const uint8_t cardValue, const uint8_t cardSuit)
+Card::Card(const int cardValue, const suit_t cardSuit, const int cardId)
 {
 	value = cardValue;
 	suit = cardSuit;
+	id = cardId;
 }
 
-*/
-string 
-Card::Card::Name()
-{
-	return name;
-}
-
-/*
-uint_8 
-card::Value()
+int Card::Value()
 {
 	return value;
 }
 
-uint_8 
-card::Suit()
+suit_t Card::Suit()
 {
-	return Suit
+	return suit;
 }
 
-/ <---->**
-*  Card printing functionality
-* <-----> /
+int Card::Id()
+{
+return id;
+}
 
+
+/**
+*  Card printing functionality
+*/
+/*
 void 
 Print(ostream& printFunc) const
 {
 	print_func << This.Name();
 }
 
-namespace 
-Card
-{
+
 	ostream& 
 	operator << (ostream& printFunc, Card& myCard) 
 	{
 		myCard.Print(printFunc);
 		return (printFunc);
 	}
-}
+
 */
