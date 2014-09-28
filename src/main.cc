@@ -27,9 +27,5 @@ int
 main()
 {
 
-	Deck myDeck;
-	
-	myDeck.Mix();
-
 	return 0;
 }

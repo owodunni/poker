@@ -39,7 +39,7 @@ Deck::Deck()
 		suit_t newSuit = static_cast<suit_t>(cardSuit);
 		for(int newValue = 2; newValue<=14;newValue++)
 		{
-			deck[deckPos] = Card(newValue,newSuit,deckPos+1);
+			deck[deckPos] = Card(newValue,newSuit);
 		}
 	}
 }

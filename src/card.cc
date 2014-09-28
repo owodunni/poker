@@ -22,15 +22,14 @@ using namespace std;
 
 Card::Card()
 {
-value = 0;
-suit = NO_CARD;
+	value = 0;
+	suit = NO_CARD;
 }
 
-Card::Card(const int cardValue, const suit_t cardSuit, const int cardId)
+Card::Card(const int cardValue, const suit_t cardSuit)
 {
 	value = cardValue;
 	suit = cardSuit;
-	id = cardId;
 }
 
 int Card::Value()
@@ -43,24 +42,48 @@ suit_t Card::Suit()
 	return suit;
 }
 
-
-
 /**
 *  Card printing functionality
 */
-/*
-void 
-Print(ostream& printFunc) const
+
+void Card::Print(ostream& stream) 
 {
-	print_func << This.Name();
+	string tempSuit;
+
+	switch(this->Suit())
+	{
+	case NO_CARD:
+		tempSuit ="NO CARD ERROR";
+		break;
+
+	case HEARTS:
+		tempSuit = "HEARTS";
+		break;
+
+	case DIAMONDS:
+		tempSuit = "DIAMONDS";
+		break;
+
+	case SPADES:
+		tempSuit = "SPADES";
+		break;
+
+	case CLUBS:
+		tempSuit = "CLUBS";
+		break;
+
+	default:
+		tempSuit = "ERROR";
+		break;
+
+	}
+	
+	stream << this->Value()<<" of "<< tempSuit;
 }
 
 
-	ostream& 
-	operator << (ostream& printFunc, Card& myCard) 
-	{
-		myCard.Print(printFunc);
-		return (printFunc);
-	}
-
-*/
+ostream& operator << (ostream& printFunc, Card& myCard) 
+{
+	myCard.Print(printFunc);
+	return (printFunc);
+}

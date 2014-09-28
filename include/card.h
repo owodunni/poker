@@ -33,19 +33,18 @@ using namespace std;
 	{
 		
 	int value ;
-	int id;
 	suit_t suit ;
 		
 	public:
 		Card();
-		Card(const int , const suit_t, const int); //constructor
+		Card(const int , const suit_t); //constructor
 		
 		int Value();
 		suit_t Suit();
 		
 		//Printing functionality
-		//void Print(std::ostream&) const;
-		//friend std::ostream& operator << (std::ostream&,Card&);
+		void Print(std::ostream&);
+		friend std::ostream& operator << (std::ostream&,Card&);
 		
 	};
 
