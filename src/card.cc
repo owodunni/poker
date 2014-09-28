@@ -20,6 +20,12 @@
 
 using namespace std;
 
+Card::Card()
+{
+value = 0;
+suit = NO_CARD;
+}
+
 Card::Card(const int cardValue, const suit_t cardSuit, const int cardId)
 {
 	value = cardValue;
@@ -37,10 +43,6 @@ suit_t Card::Suit()
 	return suit;
 }
 
-int Card::Id()
-{
-return id;
-}
 
 
 /**

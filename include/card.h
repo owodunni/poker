@@ -33,17 +33,15 @@ using namespace std;
 	{
 		
 	int value ;
-	suit_t suit ;
 	int id;
+	suit_t suit ;
 		
 	public:
+		Card();
 		Card(const int , const suit_t, const int); //constructor
-		
-		
 		
 		int Value();
 		suit_t Suit();
-		int Id();
 		
 		//Printing functionality
 		//void Print(std::ostream&) const;

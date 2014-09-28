@@ -12,28 +12,31 @@
 //# The .h file for the deck class                 
 //#########################################
 //#
-//# TODO:
+//# TODO: Lägg till en stack som består av Card pekare då kortleken blandas så läggs alla kort från deck in i stacken slumpmässigt. 
 //#
 
 #ifndef __DECK_H_INCLUDE__
 #define __DECK_H_INCLUDE__
 
-
-#include <string>
-#include <array>
+#include <vector>
+#include <stack>
+#include <random>
+#include <chrono>
 #include "card.h"
+
 
 using namespace std;
 
 	class Deck
 	{
-		//Card deck[51];
+		Card deck[51];
+		stack<Card*> deckStack;
+		void Empty();
 		
 	public:
 		Deck();
-		//Card PeekCard(const int);
-		//Card GetCard(const int); //Removes the first card and left shifts the array.
+		void Mix();
+		Card* GetCard();
+		Card* PeekCard();
 	};
-
-
 #endif
