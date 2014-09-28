@@ -12,11 +12,10 @@
 //# The card class behaves like a card
 //#########################################
 //#
-//# TODO: Generate a deck, generate a random deck.
+//# TODO: 
 //#
 
 #include "../include/deck.h"
-#include <cstdint>
 
 using namespace std;
 

@@ -12,7 +12,7 @@
 //# The card class behaves like a card
 //#########################################
 //#
-//# TODO: Take a look at the namespace it's giving me compilor errors.. 
+//# TODO: 
 //#
 
 #include "../include/card.h"
