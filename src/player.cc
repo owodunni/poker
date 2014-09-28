@@ -16,3 +16,59 @@
 //#
 
 #include "../include/player.h"
+
+Player::Player(const int playerId,const string playerName, const int playerBankroll)
+{
+	cards.resize(2);
+	id = playerId;
+	name = playerName;
+	bankroll = playerBankroll;
+}
+
+void Player::NewCard(Card* newCard, int cardNumber)
+{
+	playing = true;
+	cards[cardNumber]=newCard;
+}
+
+vector<Card*> Player::Cards()
+{
+	return cards;
+}
+
+int Player::Bet(int bet)
+{
+	if(bet>=bankroll)
+	{
+		int tempBankroll = bankroll;
+		bankroll = 0;
+		return tempBankroll;
+	}
+	else
+	{
+		bankroll -= bet;
+		return bet;
+	}
+}
+
+void Player::Win(int pot)
+{
+bankroll += pot;
+}
+
+void Player::Fold()
+{
+	playing = false;
+}
+
+bool Player::Playing()
+{
+return playing;
+}
+
+void Player::ShowCards()
+{
+ cout<<cards[0]<<'\n';
+ cout<<cards[1]<<'\n';
+}
+

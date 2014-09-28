@@ -19,7 +19,7 @@
 #define __GAMEBOARD_H_INCLUDE__
 
 #include "deck.h"
-
+#include "player.h"
 
 using namespace std;
 
