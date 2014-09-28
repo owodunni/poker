@@ -53,23 +53,23 @@ void Card::Print(ostream& stream)
 	switch(this->Suit())
 	{
 	case NO_CARD:
-		tempSuit ="NO CARD ERROR";
+		tempSuit ="NO CARD";
 		break;
 
 	case HEARTS:
-		tempSuit = "HEARTS";
+		tempSuit = "Hearts";
 		break;
 
 	case DIAMONDS:
-		tempSuit = "DIAMONDS";
+		tempSuit = "Diamonds";
 		break;
 
 	case SPADES:
-		tempSuit = "SPADES";
+		tempSuit = "Spades";
 		break;
 
 	case CLUBS:
-		tempSuit = "CLUBS";
+		tempSuit = "Clubs";
 		break;
 
 	default:
@@ -78,7 +78,43 @@ void Card::Print(ostream& stream)
 
 	}
 	
-	stream << this->Value()<<" of "<< tempSuit;
+	if(this->Value()>10)
+	{
+		
+		string tempValue;
+		
+		switch(this->Value())
+		{
+		case 11:
+			tempValue ="Jack";
+			break;
+
+		case 12:
+			tempValue = "Queen";
+			break;
+
+		case 13:
+			tempValue = "King";
+			break;
+
+		case 14:
+			tempValue = "Ace";
+			break;
+
+		default:
+			tempValue = "ERROR";
+			break;
+
+		}
+		
+		stream << tempValue<<setw(3)<<" Of "<<setw(3)<< tempSuit;
+		
+	}
+	else 
+	{
+
+		stream << this->Value()<<setw(3)<<" Of "<<setw(3)<< tempSuit;
+	}
 }
 
 

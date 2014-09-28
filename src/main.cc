@@ -27,5 +27,11 @@ int
 main()
 {
 
+Deck myDeck;
+
+myDeck.Mix();
+
+cout<<*myDeck.PeekCard()<<'\n';
+
 	return 0;
 }

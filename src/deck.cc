@@ -34,15 +34,20 @@ void Deck::Empty()
 Deck::Deck()
 {
 	int deckPos = 0;
+
 	for(int cardSuit = HEARTS; cardSuit <= CLUBS; cardSuit ++)
 	{
 		suit_t newSuit = static_cast<suit_t>(cardSuit);
+		
 		for(int newValue = 2; newValue<=14;newValue++)
 		{
 			deck[deckPos] = Card(newValue,newSuit);
+			deckPos++;
 		}
 	}
+
 }
+
 
 void Deck::Mix()
 {

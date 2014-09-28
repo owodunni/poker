@@ -29,7 +29,7 @@ using namespace std;
 
 	class Deck
 	{
-		Card deck[51];
+		Card deck[52];
 		stack<Card*> deckStack;
 		void Empty();
 		
