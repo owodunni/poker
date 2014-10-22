@@ -21,13 +21,26 @@
 #include "deck.h"
 #include "player.h"
 
+#define MAX_NUMB_PLAYERS 8
+
 using namespace std;
 
 	class GameBoard
 	{
-
+	    
 	Deck deck;
+	stack<Card*> discPile;
+	Player players[MAX_NUMB_PLAYERS];
 	
+	Card* flopTurnRiver[5];
+	
+	
+	int numPlayers();
+	bool playerOnPos(const int);
+	void newRound();
+	
+	public:
+	void deal();
 	
 	
 	
