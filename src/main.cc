@@ -37,10 +37,10 @@ main()
     Gameboard myBoard();
 
     myBoard().SeatPlayer(&player1,2);
-    myBoard.Deal();
-    myBoard.Flop();
-    myBoard.Turn();
-    myBoard.River();
+    myBoard().Deal();
+    myBoard().Flop();
+    myBoard().Turn();
+    myBoard().River();
     
     myBoard.RemoverPlayer(&player1,&emptyPlayer);
 	return 0;
