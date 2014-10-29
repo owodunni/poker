@@ -79,7 +79,7 @@ bool Gameboard::SeatPlayer(Player* newPlayer,
 
 bool Gameboard::RemovePlayer(Player* newPlayer){
     
-    cout<<newPlayer-Id()<<'\n';
+    cout<<newPlayer->Id()<<'\n';
                           
     for(int i = 0; i < MAX_NUMB_PLAYERS; i++)
     {
