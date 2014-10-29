@@ -37,7 +37,7 @@ main()
     
     Gameboard myBoard();
 
-    myBoard().Deal();
+    myBoard.Deal();
     /*if(myBoard().SeatPlayer(&player2,2)){
     cout<<"ERROR\n";
     }
