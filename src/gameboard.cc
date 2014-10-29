@@ -35,7 +35,7 @@ void Gameboard::Deal(){
     for(int j = 1; j < 2; j++){
         for(int i = 0; i < MAX_NUMB_PLAYERS ; i++){
             if(PlayerOnPos(i)){
-            seats(i)->NewCard(deck.Deal(),j);
+            seats[i]->NewCard(deck.Deal(),j);
             }
         }
     }
@@ -65,7 +65,7 @@ vector<Card*> Gameboard::FlopTurnRiver(){
     return flopTurnRiver;
 }
 
-bool Gameboard::SeatPlayer(const Player* newPlayer, 
+bool Gameboard::SeatPlayer(Player* newPlayer, 
                            const int pos){
                            
     if(!PlayerOnPos(pos)){
