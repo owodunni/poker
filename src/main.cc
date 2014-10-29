@@ -36,7 +36,7 @@ main()
     Player emptyPlayer();
     Gameboard myBoard();
 
-    myBoard.SeatPlayer(&player1,2);
+    //myBoard.SeatPlayer(&player1,2);
     /*if(myBoard().SeatPlayer(&player2,2)){
     cout<<"ERROR\n";
     }
