@@ -29,20 +29,23 @@ using namespace std;
 	{
 	    
 	Deck deck;
-	stack<Card*> discPile;
-	Player players[MAX_NUMB_PLAYERS];
-	
+	Player* seats[8];
 	Card* flopTurnRiver[5];
 	
-	
-	int numPlayers();
+	//Private functions
 	bool playerOnPos(const int);
-	void newRound();
+	void shuffle()
 	
 	public:
+	gameboard();
+	
 	void deal();
+	void flop();
+	void turn();
+	void river();
 	
-	
+	bool seatPlayer(const Player*, const int );
+	bool removePlayer(Player*,Player*);
 	
 	};
 #endif

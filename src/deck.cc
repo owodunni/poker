@@ -48,7 +48,7 @@ Deck::Deck()
 }
 
 
-void Deck::Mix()
+void Deck::mix()
 {
 
 	Empty(); //Makes sure that the deckStack is empty
@@ -78,7 +78,7 @@ void Deck::Mix()
 	}
 }
 
-Card* Deck::GetCard()
+Card* Deck::deal()
 {
 	//Should be a try catch block here if we were to pop an empty stack.
 	Card* tempCard = deckStack.top();
@@ -86,7 +86,7 @@ Card* Deck::GetCard()
 	return tempCard;
 }
 
-Card* Deck::PeekCard()
+void Deck::discard()
 {
-	return deckStack.top();
+	 deckStack.pop();
 }

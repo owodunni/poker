@@ -12,8 +12,8 @@
 //# The .h file for the player class                
 //#########################################
 //#
-//# TODO: 
-//#
+//# Playes should be handled directly by main.cc
+//# and player pointers should be given to gameboard.h
 
 #ifndef __PLAYER_H_INCLUDE__
 #define __PLAYER_H_INCLUDE__
@@ -24,7 +24,7 @@ using namespace std;
 
 class Player
 {
-	vector<Card*> cards;
+	Card* cards[2];
 	string name = "";
 	int id = 0;
 	int bankroll = 0;
@@ -41,6 +41,8 @@ public:
 	bool Playing();
 	
 	void ShowCards();
+	
+	int id();
 	
 };
 #endif

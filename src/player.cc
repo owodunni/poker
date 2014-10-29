@@ -17,7 +17,9 @@
 
 #include "../include/player.h"
 
-Player::Player(const int playerId,const string playerName, const int playerBankroll)
+Player::Player(const int playerId, 
+               const string playerName, 
+               const int playerBankroll)
 {
 	cards.resize(2);
 	id = playerId;
@@ -28,7 +30,7 @@ Player::Player(const int playerId,const string playerName, const int playerBankr
 void Player::NewCard(Card* newCard, int cardNumber)
 {
 	playing = true;
-	cards[cardNumber]=newCard;
+	cards[cardNumber] = newCard;
 }
 
 vector<Card*> Player::Cards()
@@ -38,7 +40,7 @@ vector<Card*> Player::Cards()
 
 int Player::Bet(int bet)
 {
-	if(bet>=bankroll)
+	if(bet >= bankroll)
 	{
 		int tempBankroll = bankroll;
 		bankroll = 0;
@@ -68,7 +70,10 @@ return playing;
 
 void Player::ShowCards()
 {
- cout<<cards[0]<<'\n';
- cout<<cards[1]<<'\n';
+ cout << cards[0] << '\n';
+ cout << cards[1] << '\n';
 }
 
+int Player::id(){
+return id;
+}
