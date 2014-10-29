@@ -36,8 +36,9 @@ main()
     Player emptyPlayer();
     
     player1.Bet(100);
+    player1.Win(200);
     
-    //Gameboard myBoard();
+    Gameboard myBoard();
 
     //myBoard().Flop();
     /*if(myBoard().SeatPlayer(&player2,2)){
