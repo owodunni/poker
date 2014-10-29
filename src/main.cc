@@ -34,5 +34,7 @@ main()
     Player player1(IdGen(),"Player 1",1000);
     Player player2(IdGen(),"Player 2",500);
 
+    Gameboard myBoard();
+
 	return 0;
 }
