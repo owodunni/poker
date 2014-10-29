@@ -36,11 +36,11 @@ main()
 
     Gameboard myBoard;
 
-    myBoard.SeatPlayer(&player1,2);
-    myBoard.RemovePlayer(&player1);
+    myBoard.SeatPlayer(&player1,8);
+    /*myBoard.RemovePlayer(&player1);
     if(myBoard.SeatPlayer(&player2,2)){
     cout<<"Funkar\n";
-    }
+    }*/
     
 	return 0;
 }
