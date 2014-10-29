@@ -19,15 +19,15 @@
 
 //Private functions
 
-bool gameboard::playerOnPos(const int i){
+bool Gameboard::playerOnPos(const int i){
     return !(seats[i]->id() == 0);
 }
 
-void shuffle(){
+void Gameboard::shuffle(){
     deck.mix();
 }
 
-void gameboard::deal(){
+void Gameboard::deal(){
     for(int j = 1; j < 2; j++){
         for(int i = 0; i < MAX_NUMB_PLAYERS ; i++){
             if(playerOnPos()){
@@ -37,7 +37,7 @@ void gameboard::deal(){
     }
 }
 
-void gameboard::flop(){
+void Gameboard::flop(){
 
     deck.discard();
 
@@ -47,17 +47,17 @@ void gameboard::flop(){
 
 }
 
-void gameboard::turn(){
+void Gameboard::turn(){
     deck.discard();
     flopTurnRiver[3] = deck.deal();
 }
 
-void gameboard::river(){
+void Gameboard::river(){
     deck.discard();
     flopTurnRiver[4] = deck.deal();
 }
 
-bool gameboard::seatPlayer(const Player* newPlayer, const int pos){
+bool Gameboard::seatPlayer(const Player* newPlayer, const int pos){
     if(!playerOnPos(pos)){
     seats[pos]=newPlayer
     return true;
@@ -65,7 +65,7 @@ bool gameboard::seatPlayer(const Player* newPlayer, const int pos){
     return false;
 }
 
-bool removePlayer(Player* oldPlayer, Player* newPlayer){
+bool Gameboard::removePlayer(Player* oldPlayer, Player* newPlayer){
     for(int i = 0; i<MAX_NUMB_PLAYERS; i++){
         if(seats[i]->id == oldPlayer->id){
             seats[i] = newPlayer;
