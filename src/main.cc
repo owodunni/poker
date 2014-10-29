@@ -34,9 +34,9 @@ main()
     Player player1(IdGen(),"Player 1",1000);
     Player player2(IdGen(),"Player 2",500);
     Player emptyPlayer();
-    Gameboard myBoard();
+    //Gameboard myBoard();
 
-    myBoard().Flop();
+    //myBoard().Flop();
     /*if(myBoard().SeatPlayer(&player2,2)){
     cout<<"ERROR\n";
     }
