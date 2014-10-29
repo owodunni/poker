@@ -32,11 +32,14 @@ int
 main()
 {
     Player player1(IdGen(),"Player 1",1000);
+    Player player2(IdGen(),"Player 2",2000);
 
     Gameboard myBoard;
 
     myBoard.SeatPlayer(&player1,2);
-    myBoard.Deal();   
-   
+    if(!myBoard.SeatPlayer(&player2,2)){
+    cout<<"SUCESS\n";
+    }
+    
 	return 0;
 }
