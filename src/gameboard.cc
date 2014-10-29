@@ -78,16 +78,18 @@ bool Gameboard::SeatPlayer(Player* newPlayer,
 }
 
 bool Gameboard::RemovePlayer(Player* newPlayer){
-                             
+    
+    cout<<newPlayer-Id()<<'\n';
+                          
     for(int i = 0; i < MAX_NUMB_PLAYERS; i++)
     {
         if(PlayerOnPos(i))
         {
-            if(seats[i]->Id() == newPlayer->Id())
+           /* if(seats[i]->Id() == newPlayer->Id())
             {
                 seats[i] = NULL;
                 return true;
-            }
+            }*/
         }
     }
     return false;
