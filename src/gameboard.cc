@@ -67,7 +67,10 @@ vector<Card*> Gameboard::FlopTurnRiver(){
 
 bool Gameboard::SeatPlayer(Player* newPlayer, 
                            const int pos){
-    if(!PlayerOnPos(pos)){
+    if(pos >= MAX_NUMB_PLAYERS){
+    return false;
+    }
+    else if(!PlayerOnPos(pos)){
         seats[pos]=newPlayer;
         return true;
     }

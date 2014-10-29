@@ -29,7 +29,7 @@ using namespace std;
 	{
 	    
 	Deck deck;
-	Player* seats[8];
+	Player* seats[MAX_NUMB_PLAYERS];
 	vector<Card*> flopTurnRiver;
 	
 	//Private functions
