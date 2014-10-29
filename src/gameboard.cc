@@ -85,11 +85,11 @@ bool Gameboard::RemovePlayer(Player* newPlayer){
     {
         if(PlayerOnPos(i))
         {
-           /* if(seats[i]->Id() == newPlayer->Id())
+            if(seats[i]->Id() == newPlayer->Id())
             {
-                seats[i] = NULL;
-                return true;
-            }*/
+            //    seats[i] = NULL;
+            //    return true;
+            }
         }
     }
     return false;
