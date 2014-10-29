@@ -42,7 +42,7 @@ public:
 	
 	void ShowCards();
 	
-	int id();
+	int Id();
 	
 };
 #endif

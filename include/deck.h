@@ -34,8 +34,8 @@ using namespace std;
 		
 	public:
 		Deck();
-		void mix();
-		Card* deal();
-		void discard();
+		void Mix();
+		Card* Deal();
+		void Discard();
 	};
 #endif

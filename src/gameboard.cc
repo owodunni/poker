@@ -61,7 +61,9 @@ vector<Card*> Gameboard::flopTurnRiver(){
     return flopTurnRiver;
 }
 
-bool Gameboard::seatPlayer(const Player* newPlayer, const int pos){
+bool Gameboard::seatPlayer(const Player* newPlayer, 
+                           const int pos){
+                           
     if(!playerOnPos(pos)){
     seats[pos]=newPlayer
     return true;
@@ -69,7 +71,9 @@ bool Gameboard::seatPlayer(const Player* newPlayer, const int pos){
     return false;
 }
 
-bool Gameboard::removePlayer(Player* oldPlayer, Player* newPlayer){
+bool Gameboard::removePlayer(Player* oldPlayer, 
+                             Player* newPlayer){
+                             
     for(int i = 0; i<MAX_NUMB_PLAYERS; i++){
         if(seats[i]->id == oldPlayer->id){
             seats[i] = newPlayer;

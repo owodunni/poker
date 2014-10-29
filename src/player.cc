@@ -74,6 +74,6 @@ void Player::ShowCards()
  cout << cards[1] << '\n';
 }
 
-int Player::id(){
+int Player::Id(){
 return id;
 }
