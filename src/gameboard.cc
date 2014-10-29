@@ -19,6 +19,9 @@
 
 //Private functions
 
+Gameboard::Gameboard(){
+}
+
 bool Gameboard::playerOnPos(const int i){
     return !(seats[i]->id() == 0);
 }
