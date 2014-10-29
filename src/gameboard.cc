@@ -79,7 +79,7 @@ bool Gameboard::RemovePlayer(Player* oldPlayer,
                              Player* newPlayer){
                              
     for(int i = 0; i < MAX_NUMB_PLAYERS; i++){
-        if(seats[i]->id == oldPlayer->Id){
+        if(seats[i]->Id() == oldPlayer->Id()){
             seats[i] = newPlayer;
             return true;
             }
