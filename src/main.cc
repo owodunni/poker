@@ -44,11 +44,12 @@ main()
     {
     cout<<"Sucess\n";
     }
-    myBoard().Deal();
+    /*myBoard().Deal();
     myBoard().Flop();
     myBoard().Turn();
     myBoard().River();
     
-    //myBoard().RemovePlayer(&player1,&emptyPlayer);
+    myBoard().RemovePlayer(&player1,&emptyPlayer);
+	*/
 	return 0;
 }
