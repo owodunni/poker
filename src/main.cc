@@ -33,10 +33,15 @@ main()
 {
     Player player1(IdGen(),"Player 1",1000);
     Player player2(IdGen(),"Player 2",500);
-
+    Player emptyPlayer();
     Gameboard myBoard();
 
-    myBoard().SeatPlayer(&player1,2)
-
+    myBoard().SeatPlayer(&player1,2);
+    myBoard.Deal();
+    myBoard.Flop();
+    myBoard.Turn();
+    myBoard.River();
+    
+    myBoard.RemoverPlayer(&player1,&emptyPlayer);
 	return 0;
 }
