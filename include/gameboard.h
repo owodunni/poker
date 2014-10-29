@@ -25,7 +25,7 @@
 
 using namespace std;
 
-	class GameBoard
+	class Gameboard
 	{
 	    
 	Deck deck;
