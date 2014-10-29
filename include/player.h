@@ -29,10 +29,10 @@ class Player
 	int id = 0;
 	int bankroll = 0;
 	bool playing = false;
-	
+
 public:
 	Player();
-	Player(const int,const string, int);
+	Player(const int ,const string, int);
 	void NewCard(Card*,int);
 	vector<Card*> Cards();
 	int Bet(int);
