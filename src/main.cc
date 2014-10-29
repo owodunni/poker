@@ -37,13 +37,13 @@ main()
     Gameboard myBoard();
 
     myBoard.SeatPlayer(&player1,2);
-    if(myBoard.SeatPlayer(&player2,2)){
+    /*if(myBoard.SeatPlayer(&player2,2)){
     cout<<"ERROR\n";
     }
     else
     {
     cout<<"Sucess\n";
-    }
+    }*/
     /*myBoard().Deal();
     myBoard().Flop();
     myBoard().Turn();
