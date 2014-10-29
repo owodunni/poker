@@ -47,7 +47,7 @@ using namespace std;
 	vector<Card*> FlopTurnRiver();
 	
 	bool SeatPlayer(Player*, const int );
-	bool RemovePlayer(Player*,Player*);
+	bool RemovePlayer(Player*);
 	
 	};
 #endif

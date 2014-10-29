@@ -23,7 +23,7 @@ Gameboard::Gameboard(){
 }
 
 bool Gameboard::PlayerOnPos(const int i){
-    return !(seats[i]->Id() == 0);
+    return !(seats[i] == null);
 }
 
 void Gameboard::Shuffle(){
@@ -67,22 +67,22 @@ vector<Card*> Gameboard::FlopTurnRiver(){
 
 bool Gameboard::SeatPlayer(Player* newPlayer, 
                            const int pos){
-        seats[pos]=newPlayer;                  
-    /*if(!PlayerOnPos(pos)){
+    if(!PlayerOnPos(pos)){
         seats[pos]=newPlayer;
         return true;
-    }*/
+    }
     return false;
 }
 
-bool Gameboard::RemovePlayer(Player* oldPlayer, 
-                             Player* newPlayer){
+bool Gameboard::RemovePlayer(Player* newPlayer){
                              
     for(int i = 0; i < MAX_NUMB_PLAYERS; i++){
-        if(seats[i]->Id() == oldPlayer->Id()){
-            seats[i] = newPlayer;
-            return true;
+        if(PlayerOnPos(i)){
+            if(seats[i]->Id() == newPlayer->Id()){
+                seats[i] = null;
+                return true;
             }
+        }
     }
     return false;
 }
