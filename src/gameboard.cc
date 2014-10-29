@@ -22,11 +22,11 @@
 Gameboard::Gameboard(){
 }
 
-bool Gameboard::playerOnPos(const int i){
+bool Gameboard::PlayerOnPos(const int i){
     return !(seats[i]->id() == 0);
 }
 
-void Gameboard::shuffle(){
+void Gameboard::Shuffle(){
     deck.mix();
 }
 
