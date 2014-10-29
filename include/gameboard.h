@@ -30,7 +30,7 @@ using namespace std;
 	    
 	Deck deck;
 	Player* seats[8];
-	Card* flopTurnRiver[5];
+	vector<Card*> flopTurnRiver;
 	
 	//Private functions
 	bool playerOnPos(const int);
@@ -43,6 +43,8 @@ using namespace std;
 	void flop();
 	void turn();
 	void river();
+	
+	vector<Card*> flopTurnRiver();
 	
 	bool seatPlayer(const Player*, const int );
 	bool removePlayer(Player*,Player*);

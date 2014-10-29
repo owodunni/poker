@@ -24,7 +24,7 @@ using namespace std;
 
 class Player
 {
-	Card* cards[2];
+	vector<Card*> cards;
 	string name = "";
 	int id = 0;
 	int bankroll = 0;

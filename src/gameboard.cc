@@ -57,6 +57,10 @@ void Gameboard::river(){
     flopTurnRiver[4] = deck.deal();
 }
 
+vector<Card*> Gameboard::flopTurnRiver(){
+    return flopTurnRiver;
+}
+
 bool Gameboard::seatPlayer(const Player* newPlayer, const int pos){
     if(!playerOnPos(pos)){
     seats[pos]=newPlayer
