@@ -68,10 +68,10 @@ vector<Card*> Gameboard::FlopTurnRiver(){
 bool Gameboard::SeatPlayer(Player* newPlayer, 
                            const int pos){
                            
-    if(!PlayerOnPos(pos)){
-    seats[pos]=newPlayer;
-    return true;
-    }
+    /*if(!PlayerOnPos(pos)){
+        seats[pos]=newPlayer;
+        return true;
+    }*/
     return false;
 }
 
