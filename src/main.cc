@@ -26,12 +26,5 @@ int
 main()
 {
 
-Deck myDeck;
-
-myDeck.Mix();
-
-cout<<*myDeck.PeekCard()<<'\n';
-cout<<"I'm the greatest!"<<'\n';
-
 	return 0;
 }
