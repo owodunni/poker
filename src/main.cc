@@ -36,7 +36,7 @@ main()
     Player emptyPlayer();
     Gameboard myBoard();
 
-    myBoard.Flop();
+    myBoard().Flop();
     /*if(myBoard().SeatPlayer(&player2,2)){
     cout<<"ERROR\n";
     }
