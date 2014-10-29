@@ -32,25 +32,10 @@ int
 main()
 {
     Player player1(IdGen(),"Player 1",1000);
-    Player player2(IdGen(),"Player 2",500);
-    Player emptyPlayer;
-    
+
     Gameboard myBoard;
 
-    myBoard.Deal();
-    /*if(myBoard().SeatPlayer(&player2,2)){
-    cout<<"ERROR\n";
-    }
-    else
-    {
-    cout<<"Sucess\n";
-    }*/
-    /*myBoard().Deal();
-    myBoard().Flop();
-    myBoard().Turn();
-    myBoard().River();
-    
-    myBoard().RemovePlayer(&player1,&emptyPlayer);
-	*/
+    //myBoard.Deal();
+   
 	return 0;
 }
