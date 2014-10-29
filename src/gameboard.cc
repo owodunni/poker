@@ -85,7 +85,7 @@ bool Gameboard::RemovePlayer(Player* newPlayer){
     {
         if(PlayerOnPos(i))
         {
-        seats[i]->Id(); 
+        cout<< seats[i]<<'\n'; 
             /*if(seats[i]->Id() == newPlayer->Id())
             {
                 seats[i] = NULL;
