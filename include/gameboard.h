@@ -33,21 +33,21 @@ using namespace std;
 	vector<Card*> flopTurnRiver;
 	
 	//Private functions
-	bool playerOnPos(const int);
-	void shuffle()
+	bool PlayerOnPos(const int);
+	void Shuffle();
 	
 	public:
-	gameboard();
+	Gameboard();
 	
-	void deal();
-	void flop();
-	void turn();
-	void river();
+	void Deal();
+	void Flop();
+	void Turn();
+	void River();
 	
-	vector<Card*> flopTurnRiver();
+	vector<Card*> FlopTurnRiver();
 	
-	bool seatPlayer(const Player*, const int );
-	bool removePlayer(Player*,Player*);
+	bool SeatPlayer(const Player*, const int );
+	bool RemovePlayer(Player*,Player*);
 	
 	};
 #endif

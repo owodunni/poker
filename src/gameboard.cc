@@ -27,54 +27,55 @@ void Gameboard::shuffle(){
     deck.mix();
 }
 
-void Gameboard::deal(){
+//Public functions
+void Gameboard::Deal(){
     for(int j = 1; j < 2; j++){
         for(int i = 0; i < MAX_NUMB_PLAYERS ; i++){
-            if(playerOnPos()){
-            seat(i)->NewCard(deck.deal(),j);
+            if(PlayerOnPos()){
+            seats(i)->NewCard(deck.Deal(),j);
             }
         }
     }
 }
 
-void Gameboard::flop(){
+void Gameboard::Flop(){
 
-    deck.discard();
+    deck.Discard();
 
     for(int i=0;i<3;i++){
-        flopTurnRiver[i] = deck.deal();
+        flopTurnRiver[i] = deck.Deal();
     }
 
 }
 
-void Gameboard::turn(){
-    deck.discard();
-    flopTurnRiver[3] = deck.deal();
+void Gameboard::Turn(){
+    deck.Discard();
+    flopTurnRiver[3] = deck.Deal();
 }
 
-void Gameboard::river(){
-    deck.discard();
-    flopTurnRiver[4] = deck.deal();
+void Gameboard::River(){
+    deck.Discard();
+    flopTurnRiver[4] = deck.Deal();
 }
 
-vector<Card*> Gameboard::flopTurnRiver(){
+vector<Card*> Gameboard::FlopTurnRiver(){
     return flopTurnRiver;
 }
 
-bool Gameboard::seatPlayer(const Player* newPlayer, 
+bool Gameboard::SeatPlayer(const Player* newPlayer, 
                            const int pos){
                            
-    if(!playerOnPos(pos)){
+    if(!PlayerOnPos(pos)){
     seats[pos]=newPlayer
     return true;
     }
     return false;
 }
 
-bool Gameboard::removePlayer(Player* oldPlayer, 
+bool Gameboard::RemovePlayer(Player* oldPlayer, 
                              Player* newPlayer){
                              
-    for(int i = 0; i<MAX_NUMB_PLAYERS; i++){
+    for(int i = 0; i < MAX_NUMB_PLAYERS; i++){
         if(seats[i]->id == oldPlayer->id){
             seats[i] = newPlayer;
             return true;
