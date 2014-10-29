@@ -27,14 +27,14 @@ bool Gameboard::PlayerOnPos(const int i){
 }
 
 void Gameboard::Shuffle(){
-    deck.mix();
+    deck.Mix();
 }
 
 //Public functions
 void Gameboard::Deal(){
     for(int j = 1; j < 2; j++){
         for(int i = 0; i < MAX_NUMB_PLAYERS ; i++){
-            if(PlayerOnPos()){
+            if(PlayerOnPos(i)){
             seats(i)->NewCard(deck.Deal(),j);
             }
         }
