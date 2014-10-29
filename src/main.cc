@@ -34,6 +34,9 @@ main()
     Player player1(IdGen(),"Player 1",1000);
     Player player2(IdGen(),"Player 2",500);
     Player emptyPlayer();
+    
+    player1.Bet(100);
+    
     //Gameboard myBoard();
 
     //myBoard().Flop();
