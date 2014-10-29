@@ -37,11 +37,18 @@ main()
     Gameboard myBoard();
 
     myBoard().SeatPlayer(&player1,2);
+    if(SeatPlayer(&player2,2)){
+    cout<<"ERROR\n";
+    }
+    else
+    {
+    cout<<"Sucess\n";
+    }
     myBoard().Deal();
     myBoard().Flop();
     myBoard().Turn();
     myBoard().River();
     
-    myBoard.RemoverPlayer(&player1,&emptyPlayer);
+    myBoard.RemovePlayer(&player1,&emptyPlayer);
 	return 0;
 }
