@@ -35,7 +35,7 @@ main()
 
     Gameboard myBoard;
 
-    //myBoard.Deal();
+    myBoard.SeatPlayer(player1,2);
    
 	return 0;
 }
