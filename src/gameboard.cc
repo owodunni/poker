@@ -23,7 +23,7 @@ Gameboard::Gameboard(){
 }
 
 bool Gameboard::PlayerOnPos(const int i){
-    return !(seats[i] == null);
+    return !(seats[i] == NULL);
 }
 
 void Gameboard::Shuffle(){
@@ -79,7 +79,7 @@ bool Gameboard::RemovePlayer(Player* newPlayer){
     for(int i = 0; i < MAX_NUMB_PLAYERS; i++){
         if(PlayerOnPos(i)){
             if(seats[i]->Id() == newPlayer->Id()){
-                seats[i] = null;
+                seats[i] = NULL;
                 return true;
             }
         }
