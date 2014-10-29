@@ -37,9 +37,6 @@ main()
     Gameboard myBoard;
 
     myBoard.SeatPlayer(&player1,2);
-    if(!myBoard.SeatPlayer(&player2,2)){
-    cout<<"SUCESS\n";
-    }
     
 	return 0;
 }
