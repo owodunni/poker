@@ -35,12 +35,9 @@ main()
     Player player2(IdGen(),"Player 2",500);
     Player emptyPlayer();
     
-    player1.Bet(100);
-    player1.Win(200);
-    
     Gameboard myBoard();
 
-    //myBoard().Flop();
+    myBoard().Deal();
     /*if(myBoard().SeatPlayer(&player2,2)){
     cout<<"ERROR\n";
     }

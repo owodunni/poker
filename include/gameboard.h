@@ -28,7 +28,7 @@ using namespace std;
 	class Gameboard
 	{
 	    
-	Deck deck;
+	Deck deck();
 	Player* seats[8];
 	vector<Card*> flopTurnRiver;
 	
