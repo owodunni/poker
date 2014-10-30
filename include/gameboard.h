@@ -34,7 +34,7 @@ using namespace std;
 	
 	//Private functions
 	void Shuffle();
-	bool AddPlayer(*Player);
+	bool AddPlayer(Player*);
 	
 	public:
 	Gameboard();
