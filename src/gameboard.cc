@@ -34,7 +34,7 @@ bool Gameboard::AddPlayer(Player* newPlayer){
     
     for(int i = 0; i < players.size(); i++){
         if(newPlayer->Id() < players->Id()){
-            players.insert(i,newPlayer);
+            players.insert(players.begin()+i,newPlayer);
             return true;
         }
     }
@@ -98,7 +98,7 @@ bool Gameboard::RemovePlayer(Player* newPlayer){
     {
             if(players[i]->Id() == newPlayer->Id())
             {
-                players.erase(newPlayer);
+                players.erase(players.begin()+i);
                 return true;
             }
         
