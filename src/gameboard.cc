@@ -26,7 +26,7 @@ void Gameboard::Shuffle(){
     deck.Mix();
 }
 
-bool Gameboard::AddPlayer(*Player newPlayer){
+bool Gameboard::AddPlayer(Player* newPlayer){
     if(players.size() == 0){
         players.insert(0,newPlayer);
         return true;
