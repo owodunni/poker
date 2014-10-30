@@ -68,6 +68,14 @@ bool Player::Playing()
 return playing;
 }
 
+int Player::PlayerPos(){
+return playerPos;
+}
+
+void Player::seatPlayer(int pos){
+playerPos = pos;
+}
+
 void Player::ShowCards()
 {
  cout << cards[0] << '\n';

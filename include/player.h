@@ -28,6 +28,7 @@ class Player
 	string name = "";
 	int id = 0;
 	int bankroll = 0;
+	int playerPos = 0;
 	bool playing = false;
 
 public:
@@ -39,6 +40,8 @@ public:
 	void Win(int);
 	void Fold();
 	bool Playing();
+	int PlayerPos();
+	void seatPlayer(int);
 	
 	void ShowCards();
 	

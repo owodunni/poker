@@ -17,26 +17,36 @@
 
 #include "../include/gameboard.h"
 
-//Private functions
-
 Gameboard::Gameboard(){
+flopTurnRiver.resize(5);
 }
 
-bool Gameboard::PlayerOnPos(const int i){
-    return !(seats[i] == NULL);
-}
-
+//Private functions
 void Gameboard::Shuffle(){
     deck.Mix();
+}
+
+bool Gameboard::AddPlayer(*Player newPlayer){
+    if(players.size() == 0){
+        players.insert(0,newPlayer);
+        return true;
+    }
+    
+    for(int i = 0; i < players.size(); i++){
+        if(newPlayer->Id() < players->Id()){
+            players.insert(i,newPlayer);
+            return true;
+        }
+    }
+    return false;
 }
 
 //Public functions
 void Gameboard::Deal(){
     for(int j = 1; j < 2; j++){
-        for(int i = 0; i < MAX_NUMB_PLAYERS ; i++){
-            if(PlayerOnPos(i)){
-            seats[i]->NewCard(deck.Deal(),j);
-            }
+        for(int i = 0; i < player.size() ; i++){
+            players[i]->NewCard(deck.Deal(),j);
+            
         }
     }
 }
@@ -68,30 +78,30 @@ vector<Card*> Gameboard::FlopTurnRiver(){
 bool Gameboard::SeatPlayer(Player* newPlayer, 
                            const int pos){
     if(pos >= MAX_NUMB_PLAYERS){
-    return false;
+        cout<<"Seat does not exist\n";
+        return false;
     }
-    else if(!PlayerOnPos(pos)){
-        seats[pos]=newPlayer;
-        return true;
+    
+    for(int i; i < players.size(); i++){
+        if(player[i]->Id() == newPlayer->Id()){
+            cout<<"Seat taken\n";
+            return false;
+        }
     }
-    return false;
+    
+    return AddPlayer(newPlayer);
 }
 
 bool Gameboard::RemovePlayer(Player* newPlayer){
     
-    cout<<newPlayer->Id()<<'\n';
-                          
-    for(int i = 0; i < MAX_NUMB_PLAYERS; i++)
+    for(int i = 0; i < player.size(); i++)
     {
-        if(PlayerOnPos(i))
-        {
-        cout<< seats[i]<<'\n'; 
-            /*if(seats[i]->Id() == newPlayer->Id())
+            if(players[i]->Id() == newPlayer->Id())
             {
-                seats[i] = NULL;
+                players.erase(newPlayer);
                 return true;
-            }*/
-        }
+            }
+        
     }
     return false;
 }

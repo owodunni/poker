@@ -29,25 +29,25 @@ using namespace std;
 	{
 	    
 	Deck deck;
-	Player* seats[MAX_NUMB_PLAYERS];
+	vector<Player*> players;
 	vector<Card*> flopTurnRiver;
 	
 	//Private functions
-	bool PlayerOnPos(const int);
 	void Shuffle();
+	bool AddPlayer(*Player);
 	
 	public:
 	Gameboard();
 	
-	void Deal();
+	void Deal(); 
 	void Flop();
 	void Turn();
 	void River();
 	
 	vector<Card*> FlopTurnRiver();
 	
-	bool SeatPlayer(Player*, const int );
-	bool RemovePlayer(Player*);
+	bool SeatPlayer(Player*, const int ); 
+	bool RemovePlayer(Player*); 
 	
 	};
 #endif
