@@ -98,7 +98,7 @@ bool Gameboard::RemovePlayer(Player* newPlayer){
     {
             if(players[i]->Id() == newPlayer->Id())
             {
-                players.erase(players.begin()+i);
+                //players.erase(players.begin()+i);
                 return true;
             }
         
