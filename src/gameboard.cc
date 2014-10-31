@@ -29,7 +29,7 @@ void Gameboard::Shuffle(){
 bool Gameboard::AddPlayer(Player* newPlayer){
     if(players.size() == 0){
        // players.insert(0,newPlayer);
-       newPlayer->fold();
+       newPlayer->Fold();
         return true;
     }
     
