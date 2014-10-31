@@ -39,6 +39,8 @@ main()
     myBoard.SeatPlayer(&player1,2);
     myBoard.RemovePlayer(&player1);
     
+    player1.Bet(100);
+    
     if(myBoard.SeatPlayer(&player2,2)){
     cout<<"Funkar\n";
     }
