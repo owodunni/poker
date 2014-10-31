@@ -33,10 +33,10 @@ bool Gameboard::AddPlayer(Player* newPlayer){
     }
     
     for(unsigned int i = 0; i < players.size(); i++){
-        if(newPlayer->Id() < players[i]->Id()){
-           // players.insert(players.begin()+i,newPlayer);
+        /*if(newPlayer->Id() < players[i]->Id()){
+           players.insert(players.begin()+i,newPlayer);
             return true;
-        }
+        }*/
     }
     return false;
 }
