@@ -28,8 +28,7 @@ void Gameboard::Shuffle(){
 
 bool Gameboard::AddPlayer(Player* newPlayer){
     if(players.size() == 0){
-       // players.insert(0,newPlayer);
-       newPlayer->Fold();
+        players.push_back(newPlayer);
         return true;
     }
     
@@ -45,9 +44,8 @@ bool Gameboard::AddPlayer(Player* newPlayer){
 //Public functions
 void Gameboard::Deal(){
     for(unsigned int j = 1; j < 2; j++){
-        for(unsigned int i = 0; i < player.size() ; i++){
-            players[i]->NewCard(deck.Deal(),j);
-            
+        for(unsigned int i = 0; i < player.size() ;i++){
+            players.at(i)->NewCard(deck.Deal(),j);
         }
     }
 }
@@ -99,7 +97,7 @@ bool Gameboard::RemovePlayer(Player* newPlayer){
     {
             if(players[i]->Id() == newPlayer->Id())
             {
-                //players.erase(players.begin()+i);
+                players.erase(players.begin()+i);
                 return true;
             }
         
