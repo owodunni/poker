@@ -82,7 +82,7 @@ bool Gameboard::SeatPlayer(Player* newPlayer,
     }
     
     for(unsigned int i; i < players.size(); i++){
-        if(player[i]->Id() == newPlayer->Id()){
+        if(players[i]->Id() == newPlayer->Id()){
             cout<<"Seat taken\n";
             return false;
         }
@@ -93,7 +93,7 @@ bool Gameboard::SeatPlayer(Player* newPlayer,
 
 bool Gameboard::RemovePlayer(Player* newPlayer){
     
-    for(unsigned int i = 0; i < player.size(); i++)
+    for(unsigned int i = 0; i < players.size(); i++)
     {
             if(players[i]->Id() == newPlayer->Id())
             {
