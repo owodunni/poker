@@ -33,10 +33,10 @@ bool Gameboard::AddPlayer(Player* newPlayer){
     }
     
     for(unsigned int i = 0; i < players.size(); i++){
-        /*if(newPlayer->Id() < players[i]->Id()){
+        if(newPlayer->Id() < players[i]->Id()){
            players.insert(players.begin()+i,newPlayer);
-            return true;
-        }*/
+           return true;
+        }
     }
     return false;
 }
@@ -44,7 +44,7 @@ bool Gameboard::AddPlayer(Player* newPlayer){
 //Public functions
 void Gameboard::Deal(){
     for(unsigned int j = 1; j < 2; j++){
-        for(unsigned int i = 0; i < player.size() ;i++){
+        for(unsigned int i = 0; i < players.size() ;i++){
             players.at(i)->NewCard(deck.Deal(),j);
         }
     }
