@@ -33,7 +33,7 @@ bool Gameboard::AddPlayer(Player* newPlayer){
         return true;
     }
     
-    for(int i = 0; i < players.size(); i++){
+    for(unsigned int i = 0; i < players.size(); i++){
         if(newPlayer->Id() < players[i]->Id()){
             players.insert(players.begin()+i,newPlayer);
             return true;
@@ -44,8 +44,8 @@ bool Gameboard::AddPlayer(Player* newPlayer){
 
 //Public functions
 void Gameboard::Deal(){
-    for(int j = 1; j < 2; j++){
-        for(int i = 0; i < player.size() ; i++){
+    for(unsigned int j = 1; j < 2; j++){
+        for(unsigned int i = 0; i < player.size() ; i++){
             players[i]->NewCard(deck.Deal(),j);
             
         }
@@ -56,7 +56,7 @@ void Gameboard::Flop(){
 
     deck.Discard();
 
-    for(int i=0;i<3;i++){
+    for(unsigned int i=0;i<3;i++){
         flopTurnRiver[i] = deck.Deal();
     }
 
@@ -83,7 +83,7 @@ bool Gameboard::SeatPlayer(Player* newPlayer,
         return false;
     }
     
-    for(int i; i < players.size(); i++){
+    for(unsigned int i; i < players.size(); i++){
         if(player[i]->Id() == newPlayer->Id()){
             cout<<"Seat taken\n";
             return false;
@@ -95,7 +95,7 @@ bool Gameboard::SeatPlayer(Player* newPlayer,
 
 bool Gameboard::RemovePlayer(Player* newPlayer){
     
-    for(int i = 0; i < player.size(); i++)
+    for(unsigned int i = 0; i < player.size(); i++)
     {
             if(players[i]->Id() == newPlayer->Id())
             {
