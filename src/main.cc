@@ -36,8 +36,7 @@ main()
 
     Gameboard myBoard;
 
-    myBoard.SeatPlayer(&player1,2);
-    myBoard.RemovePlayer(&player1);
+    myBoard.SeatPlayer(&player1,1);e
     
     int i = player1.Bet(100);
     

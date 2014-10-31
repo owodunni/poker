@@ -33,7 +33,7 @@ bool Gameboard::AddPlayer(Player* newPlayer){
     }
     
     for(unsigned int i = 0; i < players.size(); i++){
-        if(newPlayer->Id() < players[i]->Id()){
+        if(newPlayer->Id() < players.at(i)->Id()){
            players.insert(players.begin()+i,newPlayer);
            return true;
         }
@@ -82,7 +82,7 @@ bool Gameboard::SeatPlayer(Player* newPlayer,
     }
     
     for(unsigned int i; i < players.size(); i++){
-        if(players[i]->Id() == newPlayer->Id()){
+        if(players.at(i)->Id() == newPlayer->Id()){
             cout<<"Seat taken\n";
             return false;
         }
@@ -95,8 +95,9 @@ bool Gameboard::RemovePlayer(Player* newPlayer){
     
     for(unsigned int i = 0; i < players.size(); i++)
     {
-            if(players[i]->Id() == newPlayer->Id())
+            if(players.at(i)->Id() == newPlayer->Id())
             {
+                players
                 players.erase(players.begin()+i);
                 return true;
             }
