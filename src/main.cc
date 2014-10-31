@@ -41,7 +41,7 @@ main()
     
     int i = player1.Bet(100);
     
-    cout<<"i"<<'\n';
+    cout<<i<<'\n';
     
     if(myBoard.SeatPlayer(&player2,2)){
     cout<<"Funkar\n";
