@@ -23,9 +23,9 @@
 using namespace std;
 
 /**
-	* Creating one of each class and destroying them
+	* Creating one of each class 
 	*/
-void TEST_CLASSES();
+void TEST_CONSTRUCTOR();
 
 
 #endif

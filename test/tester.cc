@@ -25,13 +25,10 @@ main()
 {
 
 /**
-	* Testing konstruktors and destruktors for all projekt classes
+	* Testing konstruktors 
 	*/
 	
-//#########################################      
-//                                                            
-  TEST_CLASSES();
-//                                       
-//#########################################
+                                                  
+  TEST_CONSTRUCTOR();
 
 }
