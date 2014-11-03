@@ -34,7 +34,7 @@ class Player
 public:
 	Player();
 	Player(const int ,const string, int);
-	void NewCard(Card*,int);
+	bool NewCard(Card*,int);
 	vector<Card*> Cards();
 	int Bet(int);
 	void Win(int);

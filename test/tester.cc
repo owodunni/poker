@@ -16,17 +16,21 @@
 //# TODO:
 //#
 
-#include "../include/card.h"
+#include "../include/gameboard.h"
+#include "../include/test.h"
+
 
 int
 main()
 {
 
-//###########TESTING DESTRUCTORS###########      
+/**
+	* Testing konstruktors and destruktors for all projekt classes
+	*/
+	
+//#########################################      
 //                                                            
-// 
-//        
-//        
+  TEST_CLASSES();
 //                                       
 //#########################################
 

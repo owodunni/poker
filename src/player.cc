@@ -27,10 +27,16 @@ Player::Player(const int playerId,
 	bankroll = playerBankroll;
 }
 
-void Player::NewCard(Card* newCard, int cardNumber)
+bool Player::NewCard(Card* newCard, int cardNumber)
 {
+	if((cardNumber != 1)&&(cardNumber != 2)){
+	
+	cout<<"Wrong cardNumber"
+	return false;
+	}
 	playing = true;
-	cards[cardNumber] = newCard;
+	cards[cardNumber  - 1 ] = newCard;
+	return true;
 }
 
 vector<Card*> Player::Cards()
