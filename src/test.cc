@@ -36,7 +36,7 @@ void TEST_CARD(){
 Card card;
 cout<<"Deleting card\n";
 
-suit_t newSuit{HEARTS};
+suit_t newSuit=HEARTS;
 
 Card cardA(2, newSuit);
 cout<<"Deleting cardA\n";
