@@ -17,9 +17,6 @@
 
 #include "../include/test.h"
 
-
-suit_t newSuit HEARTS;
-
 void TEST_CLASSES(){
 
 TEST_CARD();
@@ -66,8 +63,8 @@ cout<<"Deleting card\n";
 Player playerA;
 Card card1;
 Card card2;
-playerA.NewCard(card1,1);
-playerA.NewCard(card2,2);
+playerA.NewCard(&card1,1);
+playerA.NewCard(&card2,2);
 cout<<"Deleting card\n";
 }
 
