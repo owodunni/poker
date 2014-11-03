@@ -64,7 +64,7 @@ Player player;
 cout<<"Deleting card\n";
 
 Player playerA;
-Card card1:
+Card card1;
 Card card2;
 playerA.NewCard(card1,1);
 playerA.NewCard(card2,2);
