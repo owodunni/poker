@@ -31,7 +31,7 @@ bool Player::NewCard(Card* newCard, int cardNumber)
 {
 	if((cardNumber != 1)&&(cardNumber != 2)){
 	
-	cout<<"Wrong cardNumber"
+	cout<<"Wrong cardNumber";
 	return false;
 	}
 	playing = true;
