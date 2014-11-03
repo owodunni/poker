@@ -51,9 +51,9 @@ void TEST_GAMEBOARD(){
 Gameboard gameboard;
 cout<<"Deleting card\n";
 
-Gameboard gameboardA();
-Player player1();
-Player player2();
+Gameboard gameboardA;
+Player player1;
+Player player2;
 gameboardA.SeatPlayer(&player1, 2);
 gameboardA.SeatPlayer(&player2, 3);
 cout<<"Deleting card\n";
@@ -63,9 +63,9 @@ void TEST_PLAYER(){
 Player player;
 cout<<"Deleting card\n";
 
-Player playerA();
-Card card1():
-Card card2();
+Player playerA;
+Card card1:
+Card card2;
 playerA.NewCard(card1,1);
 playerA.NewCard(card2,2);
 cout<<"Deleting card\n";
