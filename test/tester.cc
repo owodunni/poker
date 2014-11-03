@@ -24,11 +24,21 @@ int
 main()
 {
 
-/**
+	/**
 	* Testing konstruktors 
 	*/
+	//#########################################      
+	                                                        
+	//TEST_CLASSES();                          
 	
-                                                  
-  TEST_CONSTRUCTOR();
+	//TEST_CARD();
+
+	//TEST_DECK();
+
+	//TEST_PLAYER();
+
+	//TEST_GAMEBOARD();
+	
+	//#########################################
 
 }

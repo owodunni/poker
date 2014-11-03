@@ -20,8 +20,18 @@
 
 suit_t newSuit HEARTS;
 
+void TEST_CLASSES(){
 
-void TEST_CONSTRUCTOR(){
+TEST_CARD();
+
+TEST_DECK();
+
+TEST_PLAYER();
+
+TEST_GAMEBOARD();
+}
+
+void TEST_CARD(){
 
 Card card;
 cout<<"Deleting card\n";
@@ -30,10 +40,14 @@ suit_t newSuit HEARTS;
 
 Card cardA(2, newSuit);
 cout<<"Deleting cardA\n";
+}
 
+void TEST_DECK(){
 Deck deck;
 cout<<"Deleting card\n";
+}
 
+void TEST_GAMEBOARD(){
 Gameboard gameboard;
 cout<<"Deleting card\n";
 
@@ -43,7 +57,9 @@ Player player2();
 gameboardA.SeatPlayer(&player1, 2);
 gameboardA.SeatPlayer(&player2, 3);
 cout<<"Deleting card\n";
+}
 
+void TEST_PLAYER(){
 Player player;
 cout<<"Deleting card\n";
 
@@ -53,5 +69,6 @@ Card card2();
 playerA.card1(card1,1);
 playerA.card2(card2,2);
 cout<<"Deleting card\n";
-
 }
+
+

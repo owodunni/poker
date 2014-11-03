@@ -25,7 +25,14 @@ using namespace std;
 /**
 	* Creating one of each class 
 	*/
-void TEST_CONSTRUCTOR();
+void TEST_CLASSES();
 
+void TEST_CARD();
+
+void TEST_DECK();
+
+void TEST_GAMEBOARD();
+
+void TEST_PLAYER();
 
 #endif
