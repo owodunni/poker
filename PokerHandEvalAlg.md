@@ -12,7 +12,19 @@ För att snabbt kunna evaluera poker händerna utan att behöva sortera dem så 
 
 Multiplicerar man samman en hands primtal så får man ett värde på handen som är oberoende av kortens ordning. Vi måste också lägga till en bit för kortets färg. För att lätt kunna evaluera korten så sparar vi alla information om dem på en integer med förljande form.
 
-| xxxbbbbb | bbbbbbbb| cdhsrrrr| xxxppppp |
+| xxxbbbbb | bbbbbbbb| ssssrrrr| xxxppppp |
 |----------|---------|---------|:--------:|
+
+p = primtal
+r = kort värde
+s = färg
+b = bitar som avgör kort rang
+
+===
+
+##Sorce
+
+http://www.suffecool.net/poker/evaluator.html
+
 
 
