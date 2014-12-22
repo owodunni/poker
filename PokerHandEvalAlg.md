@@ -10,3 +10,9 @@ För att snabbt kunna evaluera poker händerna utan att behöva sortera dem så 
 | ---------|---|---|---|---|---|---|---|---|----|------|------|-------|:---:|
 | Prime nr | 2 | 3 | 5 | 7 | 11| 13| 17| 19| 23 | 29   | 31   | 37    | 41  |
 
+Multiplicerar man samman en hands primtal så får man ett värde på handen som är oberoende av kortens ordning. Vi måste också lägga till en bit för kortets färg. För att lätt kunna evaluera korten så sparar vi alla information om dem på en integer med förljande form.
+
+| xxxbbbbb | bbbbbbbb| cdhsrrrr| xxxppppp |
+|----------|---------|---------|:--------:|
+
+
