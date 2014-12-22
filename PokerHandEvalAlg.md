@@ -6,18 +6,7 @@ Vid 5 korts poker finns det bara c(52, 5), eller  2 598 960 olika händer. Men d
 
 För att snabbt kunna evaluera poker händerna utan att behöva sortera dem så får varje kort ett primtal tilldelat till sig beroende på kort värdet.
 
-| Value | Prime nr |
-| ------|:--------:|
-| 2     | 2        |
-| 3     | 3        |  
-| 4     | 5        |
-| 5     | 7        |
-| 6     | 11       |  
-| 7     | 13       |
-| 8     | 17       |
-| 9     | 19       |  
-| 10    | 23       |
-| Jack  | 29       |
-| Queen | 31       |  
-| King  | 37       |
-| Ace   | 41       |
+| Value    | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | Jack | King | Queen | Ace |
+| ---------|---|---|---|---|---|---|---|---|----|------|------|-------|:---:|
+| Prime nr | 2 | 3 | 5 | 7 | 11| 13| 17| 19| 23 | 29   | 31   | 37    | 41  |
+
