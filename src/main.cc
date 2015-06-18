@@ -1,15 +1,15 @@
-//#########################################      
-//#                                       #                     
-//#       -----BEATING POKER------        # 
+//#########################################
+//#                                       #
+//#       -----BEATING POKER------        #
 //#       - ~a Poole production~ -        #
 //#       ------------------------        #
 //#                                       #
 //#########################################
-//# filename:	main.cc              
-//# creator:	Alexander Poole         
-//# date: 		2014.08.27         
-//#                                     
-//# The main file                
+//# filename:	main.cc
+//# creator:	Alexander Poole
+//# date: 		2014.08.27
+//#
+//# The main file
 //#########################################
 //#
 //# TODO:
@@ -22,16 +22,20 @@ using namespace std;
 
 
 
-int 
+int
 main()
 {
+bool 	playing	=	true;
 
-Deck myDeck;
 
-myDeck.Mix();
+while(playing)
+{
+	int 	gameState = preFlop;
+	switch (gameState) {
+		case 1:
+	}
 
-cout<<*myDeck.PeekCard()<<'\n';
-cout<<"I'm the greatest!"<<'\n';
+}
 
 	return 0;
 }
