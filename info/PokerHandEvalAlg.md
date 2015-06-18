@@ -24,7 +24,8 @@ b = bitar som avgör kort rang
 
 ##Sorce
 
-http://www.suffecool.net/poker/evaluator.html
+pokerEvalAlg.html
+
 
 
 
