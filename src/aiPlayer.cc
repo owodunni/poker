@@ -19,7 +19,7 @@
 
 using namespace std;
 
-AiPlayer::Player(const int playerId,const string playerName, const int playerBankroll)
+AiPlayer::AiPlayer(const int playerId,const string playerName, const int playerBankroll)
 {
 	cards.resize(2);
 	id = playerId;
@@ -32,7 +32,7 @@ int AiPlayer::MakeAction()
 
   std::cout << "AiPlayer making action" << std::endl;
 
-  /*
+/*
 	if(bet>=bankroll)
 	{
 		int tempBankroll = bankroll;
@@ -44,6 +44,6 @@ int AiPlayer::MakeAction()
 		bankroll -= bet;
 		return bet;
 	}
-  */
+*/
   return 50;
 }

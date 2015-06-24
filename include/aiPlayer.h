@@ -24,9 +24,14 @@ using namespace std;
 class AiPlayer : public Player
 {
 public:
-	AiPlayer() = default;
+	AiPlayer() = default; //Konstruktor
 	AiPlayer(const int,const string, int);
-	~AiPlayer();
+	~AiPlayer() = default; //Destruktor
+	AiPlayer(const AiPlayer&) = default;
+	AiPlayer(AiPlayer&&) = default; //Move-kopiering
+	AiPlayer& operator=(const AiPlayer&) = default; //Tilldelningskonstruktor
+	AiPlayer& operator=(AiPlayer&&) = default; // Move-tilldelning
+
 	int MakeAction();
 };
 #endif

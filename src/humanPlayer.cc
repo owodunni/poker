@@ -19,7 +19,7 @@
 
 using namespace std;
 
-humanPlayer::Player(const int playerId,const string playerName, const int playerBankroll)
+HumanPlayer::HumanPlayer(const int playerId,const string playerName, const int playerBankroll)
 {
 	cards.resize(2);
 	id = playerId;
@@ -32,7 +32,8 @@ int HumanPlayer::MakeAction()
   int bet;
   std::cout << "Make action [Check (c), Fold (f), Bet (b)]" << std::endl;
   cin >> bet;
-  /*
+
+
 	if(bet>=bankroll)
 	{
 		int tempBankroll = bankroll;
@@ -44,6 +45,4 @@ int HumanPlayer::MakeAction()
 		bankroll -= bet;
 		return bet;
 	}
-  */
-  return bet;
 }

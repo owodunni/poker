@@ -24,6 +24,7 @@ using namespace std;
 
 class Player
 {
+
 protected:
 	vector<Card*> cards;
 	string name = "";
@@ -32,14 +33,21 @@ protected:
 	bool playing = false;
 
 public:
-	Player();
+	Player() = default; //Konstruktor
+	~Player() = default; //Destruktor
+	Player(const Player&) = default;
+	Player(Player&&) = default; //Move-kopiering
+	Player& operator=(const Player&) = default; //Tilldelningskonstruktor
+	Player& operator=(Player&&) = default; // Move-tilldelning
+
+
 	void NewCard(Card*,int);
 	vector<Card*> Cards();
 	void Win(int);
 	bool Playing();
 	void ShowCards();
 
-	virtual int MakeAction();
+	virtual int MakeAction() = 0;
 
 };
 #endif

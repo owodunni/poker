@@ -24,9 +24,14 @@ using namespace std;
 class HumanPlayer: public Player
 {
 public:
-  HumanPlayer() = default;
-  Player(const int,const string, int);
-  ~HumanPlayer();
+  HumanPlayer() = default; //Konstruktor
+  HumanPlayer(const int,const string, int);
+  ~HumanPlayer() = default; //Destruktor
+  HumanPlayer(const HumanPlayer&) = default;
+  HumanPlayer(HumanPlayer&&) = default; //Move-kopiering
+  HumanPlayer& operator=(const HumanPlayer&) = default; //Tilldelningskonstruktor
+  HumanPlayer& operator=(HumanPlayer&&) = default; // Move-tilldelning
+
   int MakeAction();
 };
 #endif
