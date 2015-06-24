@@ -31,15 +31,12 @@ string Insert(const std::string okEntry [], const std::string message) {
 		entryLenght++;
 	}
 
-	while (!legEntry)
-	{
+	while (!legEntry){
 		std::cout << message << std::endl;
 		cin >> entry;
 
-		for (size_t i = 0; i < entryLenght; i++)
-		{
-			if(entry==okEntry [i])
-			{
+		for (size_t i = 0; i < entryLenght; i++){
+			if(entry==okEntry [i]){
 				legEntry = true;
 				break;
 			}
@@ -48,27 +45,28 @@ string Insert(const std::string okEntry [], const std::string message) {
 	return entry;
 }
 
-void Intro()
-{
-	string setup;
+void Intro(){
+	std::string setup;
 	int numPlay;
+	std::string aiType;
 	std::string playEntries   [] = {"1","2","3","4","5","6","7","8","9","10","ä"};
 	std::string setupEntries  [] = {"y","Y","N","n","ä"};
-	std::string AiTypeEntries [] = {"H","h","M","m","E","e","ä"}
+	std::string AiTypeEntries [] = {"H","h","M","m","E","e","ä"};
 
 	cout << "Welcome to BEATING POKER a simple poker game." << endl;
 
 	numPlay = atoi(Insert(playEntries,"How many AI-players do you want? [Max 10]").c_str());
 	setup = Insert(setupEntries,"Do you want to do an advance setup? [y/n]");
 
-	if(setup == "y" or setup == "Y")
-	{
+	if(setup == "y" or setup == "Y"){
 		cout << "ADVANCED SETUP" << endl;
-
+		for (int i = 0;  i< numPlay; i++) {
+			std::cout << i << std::endl;
+		}
 	}
-		else if(setup == "n" or setup == "N")
-	{
+		else if(setup == "n" or setup == "N"){
 		cout << "QUICK SETUP" << endl;
+		aiType = Insert(AiTypeEntries,"What AI do you want to battle? \n Hard [h] \n Medium [m] \n Easy [e]");
 	}
 }
 

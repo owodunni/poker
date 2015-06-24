@@ -15,31 +15,18 @@
 //# TODO:
 //#
 
-#ifndef __PLAYER_H_INCLUDE__
-#define __PLAYER_H_INCLUDE__
+#ifndef __HUMANPLAYER_H_INCLUDE__
+#define __HUMANPLAYER_H_INCLUDE__
 
-#include "card.h"
-#include <vector>
+#include "player.h"
 using namespace std;
 
-class Player
+class HumanPlayer: public Player
 {
-protected:
-	vector<Card*> cards;
-	string name = "";
-	int id = 0;
-	int bankroll = 0;
-	bool playing = false;
-
 public:
-	Player();
-	void NewCard(Card*,int);
-	vector<Card*> Cards();
-	void Win(int);
-	bool Playing();
-	void ShowCards();
-
-	virtual int MakeAction();
-
+  HumanPlayer() = default;
+  Player(const int,const string, int);
+  ~HumanPlayer();
+  int MakeAction();
 };
 #endif
