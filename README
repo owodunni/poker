@@ -1,54 +1,56 @@
- .------.                                              
- |A_  _ |         #########################################      
- |( \/ ).-----.   #                                       #                     
- | \  /|K /\  |   #       -----BEATING POKER------        # 
+ .------.
+ |A_  _ |         #########################################
+ |( \/ ).-----.   #                                       #
+ | \  /|K /\  |   #       -----BEATING POKER------        #
  |  \/ | /  \ |   #       - ~a Poole production~ -        #
  `-----| \  / |   #       ------------------------        #
        |  \/ K|   #                                       #
        `------'   #########################################
-		 
-		 
-INTRODUCTION
-This is a text based poker client 
 
-		 
+
+INTRODUCTION
+This is a text based poker client manly for bots to battle one and other.
+
+Installation 1.0
+inorder to compile the game on linux simply install build-essentials and run make
+from a terminal while standing in this folder. To run enter the following command
+ .\bin/poker.exe 
+
 SECTION X.X
 Any file belonging to the beating poker project should have one of the following headers
 
-1, This header is primarily used for files where '#' initialises a comment. 
-#########################################      
-#                                       #                     
-#       -----BEATING POKER------        # 
+1, This header is primarily used for files where '#' initialises a comment.
+#########################################
+#                                       #
+#       -----BEATING POKER------        #
 #       - ~a Poole production~ -        #
 #       ------------------------        #
 #                                       #
 #########################################
-# filename:	"name"                  
-# creator:	"creator"               
-# date: 	"date"                  
-#                                       
-# "Enter description"                   
+# filename:	"name"
+# creator:	"creator"
+# date: 	"date"
+#
+# "Enter description"
 #########################################
 #
 # TODO:
 #
 
 2, This header is primarily used for .cc or .h files or any file where // initialises a comment.
-//#########################################      
-//#                                       #                     
-//#       -----BEATING POKER------        # 
+//#########################################
+//#                                       #
+//#       -----BEATING POKER------        #
 //#       - ~a Poole production~ -        #
 //#       ------------------------        #
 //#                                       #
 //#########################################
-//# filename:	"name"                    
-//# creator:	"creator"                 
-//# date: 		"date"            
-//#                                       
-//# "Enter description"                   
+//# filename:	"name"
+//# creator:	"creator"
+//# date: 		"date"
+//#
+//# "Enter description"
 //#########################################
 //#
 //# TODO:
 //#
-
-

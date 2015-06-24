@@ -21,7 +21,7 @@
 #define preFlop   1
 #define flop      2
 #define river     3
-#define trurn     4
-#define end       0
+#define turn      4
+#define endRound  5
 
 #endif
