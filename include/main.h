@@ -18,10 +18,12 @@
 #ifndef __MAIN_H_INCLUDED__
 #define __MAIN_H_INCLUDED__
 
-#define preFlop   1
-#define flop      2
-#define river     3
-#define turn      4
-#define endRound  5
+
+#include "gameboard.h"
+using namespace std;
+
+enum state_t {PREFLOP,FLOP,RIVER,TURN,ENDROUND};
+vector<Player*> SetUp();
+
 
 #endif

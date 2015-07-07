@@ -1,18 +1,18 @@
 //#########################################      
-//#                                       #                     
-//#       -----BEATING POKER------        # 
+//#                                       #
+//#       -----BEATING POKER------        #
 //#       - ~a Poole production~ -        #
 //#       ------------------------        #
 //#                                       #
 //#########################################
-//# filename:	deck.h                
-//# creator:	Alexander Poole     
-//# date: 		2014.09.14            
-//#                                       
-//# The .h file for the deck class                 
+//# filename:	deck.h
+//# creator:	Alexander Poole
+//# date: 		2014.09.14
+//#
+//# The .h file for the deck class
 //#########################################
 //#
-//# TODO: Lägg till en stack som består av Card pekare då kortleken blandas så läggs alla kort från deck in i stacken slumpmässigt. 
+//# TODO: Lägg till en stack som består av Card pekare då kortleken blandas så läggs alla kort från deck in i stacken slumpmässigt.
 //#
 
 #ifndef __DECK_H_INCLUDE__
@@ -32,7 +32,7 @@ using namespace std;
 		Card deck[52];
 		stack<Card*> deckStack;
 		void Empty();
-		
+
 	public:
 		Deck();
 		void Mix();

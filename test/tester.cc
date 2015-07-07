@@ -23,8 +23,10 @@
 int
 main()
 {
-  new HumanPlayer* player1;
-  //AiPlayer player2;
-  player1->MakeAction();
-  //player2.MakeAction();
+  HumanPlayer humPlay;
+  Player * player1 = &humPlay;
+
+  int temp = player1->MakeAction();
+
+  std::cout << temp << std::endl;
 }
